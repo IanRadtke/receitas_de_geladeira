@@ -1,0 +1,196 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+/* Estiliza o corpo da página */
+body {
+    font-family: "SUSE", sans-serif; /* Define a fonte padrão */
+    background-color: #ffffff; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os padding padrão */
+}
+
+/* Estiliza a barra de navegação */
+nav {
+    background-color: #FF8400; /* Define a cor de fundo da barra */
+    overflow: hidden; /* Esconde qualquer conteúdo que extrapolar */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estiliza ul da barra de navegação */
+nav ul {
+    list-style-type: none; /* Remove o style padrão */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os padding padrão */
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: center; /* Centraliza as opções da barra de navegação */
+}
+
+/* Estiliza os botões da barra de navegação */
+nav li a {
+    display: block; /* Aumenta o tamanho dos botões */
+    color: white; /* Cor do texto */
+    padding: 14px 16px; /* Adiciona padding */
+    text-decoration: none; /* Remove a outline que vem por padrão */
+    border-bottom: 1px solid #FF8400; /* Adiciona um leve bordaa embaixo, para que nãose perceba diferança com a borda adicionada ao passar o mouse pelo botão */
+}
+
+/* Estiliza os botões quando se passa o mouse por cima */
+nav li a:hover {
+    background-color: #ffffff; /* Altera a cor de fundo do botão */
+    color: #FF6A28; /* Altera a cor do texto */
+    border-bottom: 1px solid #FF8400; /* Adiciona um pequena borda embaixo */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #FF8400; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+.pesquisa {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+.pesquisa input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #000000; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    box-shadow: 0 0px 10px 0px rgba(255, 132, 0, 1);
+}
+
+/* Estiliza quando passamos o mouse encima do input */
+.pesquisa input:focus {
+    outline: none; /* Remove a outline que vem por padrão */
+}
+
+/* Estiliza os botões dentro das seções */
+.pesquisa button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: 2px solid #FF6A28; /* Adiciona um borda para não se estranha quando passar o mousepor cima */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #FF6A28; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza os botões quando se passa o mouse por cima deles */
+.pesquisa button:hover {
+    background-color: #FFF5E5; /* Altera a cor de fundo */
+    color: #FF6A28; /* Altera a cor do texto */
+    border: 2px solid #FF6A28; /* Adiciona uma borda, para não se confundir o botão com o fundo */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex; /* Usa Flexbox para layout */
+    width: 52rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    width: 46rem; /* Largura máxima dos itens */
+    background: #FFF5E5; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-right: 2rem; /* Espaçamento a direita dos itens */
+    margin-left: 2rem; /* Espaçamento a esquerda dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.item-resultado p {
+    color: #000000; /* Cor do texto */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    color: #FF6A28; /* Cor do texto */
+    margin: 0px; /* Remove a margin padrão */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #FF6A28; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.ingredientes-meta {
+    color: #000000; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    display: flex; /* Alinha os ingredientes */
+    flex-wrap: wrap; /* Faz a quebra de linha quando não couber mais ingredientes na linha */
+}
+
+/* Estiliza a lista de ingredientes */
+.ingredientes-meta li {
+    margin-right: 30px; /* Adiciona uma margin a direita, para tornar os ingredientes legíveis */
+}
+
+/* Estiliza as imagens */
+img {
+    width: 46em; /* Largura máxima da imagem */
+    height: 150px; /* Altura máxima da imagem */
+    object-fit: cover; /* Não deixa a imgem distorcer */
+    border-top-right-radius: 0.6em; /* Arredonda a borda superior direita */
+    border-top-left-radius: 0.6em; /* Arredonda a borda superior esquerda */
+    transition: transform 0.5s ease-in-out; /* Torna a animação da imagem mais suave */
+}
+
+/* Estiliza as imagens quando passamos o mouse por cima */
+img:hover {
+    transform: translateY(-12px) scale(1.05); /* Modifica atributos da imagem quando o mouse passa por cima */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #E8E8E8; /* Cor de fundo do rodapé */
+    color: #333333; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estiliza o caminho da barra de scrool horizontal */
+::-webkit-scrollbar {
+    height: 20px; /*Tamanho da barra*/
+    background: rgba(255, 132, 0, 0.5); /* Cor do fundo da barra */
+    border-radius: 0.6em; /* Arredonda a borda do fundo da barra */
+}
+
+/* Estiliza a barra de scrool horizontal */
+::-webkit-scrollbar-thumb {
+    background: #000000; /* Cor da barra */
+    border-radius: 0.6em; /* Arredonda a borda da barra */
+}
+  

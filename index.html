@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Receitas de geladeira</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"  onclick="pesquisar('boi')">Boi</a></li>
+            <li><a href="#" onclick="pesquisar('porco')">Porco</a></li>
+            <li><a href="#" onclick="pesquisar('frango')">Frango</a></li>
+            <li><a href="#" onclick="pesquisar('vegetariano')">Vegetariano</a></li>
+            <li><a href="#" onclick="pesquisar('massa')">Massa</a></li>
+            <li><a href="#" onclick="pesquisar('bebida')">Bebida</a></li>
+            <li><a href="#" onclick="pesquisar('doce')">Doce</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>RECEITAS DE GELADEIRA</h1>
+    </header>
+    <main>
+        <section class="pesquisa" id="pesquisa">
+            <input type="text" placeholder="Digite o que você possui na geladeira" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Receitas da sua geladeira. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: email@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
