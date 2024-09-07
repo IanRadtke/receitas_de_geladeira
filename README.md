@@ -51,4 +51,7 @@ A idéia do scroll horizontal foi pensado para o usuário que provavelmente aces
 
 **Vamos cozinhar juntos!** ‍‍
 
+**Experimente o projeto no vercel:**
+https://receitas-de-geladeira.vercel.app/#
+
 **#receitas #cozinha #webdev #javascript #html #css**
